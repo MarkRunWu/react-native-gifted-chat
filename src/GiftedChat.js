@@ -567,6 +567,7 @@ GiftedChat.defaultProps = {
   extraData: null,
   minComposerHeight: MIN_COMPOSER_HEIGHT,
   maxComposerHeight: MAX_COMPOSER_HEIGHT,
+  emptyStyle: {},
 };
 
 GiftedChat.propTypes = {
@@ -622,6 +623,7 @@ GiftedChat.propTypes = {
   extraData: PropTypes.object,
   minComposerHeight: PropTypes.number,
   maxComposerHeight: PropTypes.number,
+  emptyStyle: PropTypes.object,
 };
 
 export {

@@ -154,7 +154,7 @@ export default class MessageContainer extends React.Component {
 
   render() {
     if (this.props.messages.length === 0) {
-      return <View style={styles.container} />;
+      return <View style={[styles.container, this.props.emptyStyle]} />;
     }
     return (
       <View style={styles.container}>
@@ -230,6 +230,7 @@ MessageContainer.defaultProps = {
   extraData: null,
   scrollToBottom: false,
   scrollToBottomOffset: 200,
+  emptyStyle: {},
 };
 
 MessageContainer.propTypes = {
@@ -247,4 +248,5 @@ MessageContainer.propTypes = {
   scrollToBottom: PropTypes.bool,
   scrollToBottomOffset: PropTypes.number,
   scrollToBottomComponent: PropTypes.func,
+  emptyStyle: PropTypes.object,
 };
